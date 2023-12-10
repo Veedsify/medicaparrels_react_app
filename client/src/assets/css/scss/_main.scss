@@ -1,0 +1,65 @@
+div {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Jost" sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem;
+}
+
+$primary-red: #ff5e5e; /* Main red color */
+$light-red: #ffa4a4; /* Lighter red for contrast */
+$dark-red: #d83c3c; /* Darker red for text and borders */
+
+$background-light: #ffffff; /* Light background color */
+$background-dark: #d5d5d5; /* Slightly darker background for contrast */
+
+$text-dark: #333; /* Dark text color for light background */
+$text-light: #fff; /* Light text color for dark background */
+
+$accent-color: #ff8c8c; /* Accent color for highlights and buttons */
+
+.buttons {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid $primary-red;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $text-dark;
+  user-select: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-0.05rem);
+  }
+  &:active {
+    transform: translateY(0.05rem);
+  }
+}
+
+a svg {
+  stroke: #444;
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+nav {
+  max-width: 90rem;
+  margin-inline: auto;
+  padding: 0 1rem;
+  border-bottom: 0.09rem solid $background-dark;
+}
+

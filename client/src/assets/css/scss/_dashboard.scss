@@ -1,0 +1,55 @@
+.dashboard {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-top: 2rem;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  .welcome-message {
+    margin: 4rem 0;
+  }
+  .menus {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.4rem;
+    margin-bottom: 2rem;
+    .menu {
+      padding: 2rem 1rem;
+      border-radius: 0.4rem;
+      background-color: $background-light;
+      box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+      cursor: pointer;
+      transition: none;
+      border: 0.09rem solid $background-dark;
+      &:hover {
+        transform: translateY(-0.1rem);
+        background: $accent-color;
+        * {
+          color: $text-light;
+          stroke: #ffffff;
+        }
+      }
+      &:active {
+        transform: translateY(0.1rem);
+      }
+      a,
+      svg {
+        color: $text-dark;
+        transition: none;
+        stroke: #333333;
+      }
+      h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

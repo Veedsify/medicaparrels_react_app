@@ -3,6 +3,21 @@
 // }
 
 .admin-dashboard {
-  @import "main";
+  @import "scss/main";
+
+  @import "scss/adminNav";
+
+@import "scss/dashboard";
+
+@import "scss/products";
+
+@import "scss/orders";
+
+@import "scss/blogs";
+
+@import "scss/orders";
+
+@import "scss/users";
+
 }
 

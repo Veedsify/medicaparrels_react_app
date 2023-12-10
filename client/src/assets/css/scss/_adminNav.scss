@@ -1,0 +1,120 @@
+.admin-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  min-height: 10vh;
+  .quick_actions {
+    position: relative;
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      cursor: pointer;
+      border: 1px solid $primary-red;
+      padding: 0.2rem;
+      &:hover + ul {
+        display: block;
+      }
+    }
+    ul {
+      position: absolute;
+      top: 50px;
+      display: none;
+      right: 0;
+      background-color: $background-light;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 0.4rem;
+      padding: 0.4rem;
+      &:hover {
+        display: block;
+      }
+      li {
+        display: block;
+        &:hover {
+          svg {
+            stroke: $text-light;
+          }
+        }
+        a {
+          color: $text-dark;
+          text-decoration: none;
+          padding: 1rem 1rem;
+          display: block;
+          cursor: pointer;
+          width: 200px;
+          &:hover {
+            color: $text-light;
+          }
+        }
+        &:hover {
+          border-radius: 0.2rem;
+          background-color: $primary-red;
+          color: $text-light;
+          a {
+            color: $text-light;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .notifications {
+    margin-left: auto;
+    position: relative;
+    div {
+      padding: 1rem 0;
+      cursor: pointer;
+      svg {
+        stroke: $text-dark;
+      }
+      &:hover + ul {
+        display: block;
+      }
+    }
+    ul {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      display: none;
+      overflow: auto;
+      max-height: 300px;
+      background-color: $background-light;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 0.4rem;
+      padding: 0.4rem;
+      &:hover {
+        display: block;
+      }
+      li {
+        display: block;
+        &:hover {
+          svg {
+            stroke: $text-light;
+          }
+        }
+        a {
+          color: $text-dark;
+          text-decoration: none;
+          padding: 1rem 1rem;
+          display: block;
+          cursor: pointer;
+          width: 200px;
+          &:hover {
+            color: $text-light;
+          }
+        }
+        &:hover {
+          border-radius: 0.2rem;
+          background-color: $primary-red;
+          color: $text-light;
+          a {
+            color: $text-light;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

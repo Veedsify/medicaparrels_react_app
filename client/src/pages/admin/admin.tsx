@@ -1,3 +1,4 @@
+import "../../assets/css/admin.css";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./dashboard";
 import AdminNavbar from "./components/navbar";
@@ -8,7 +9,7 @@ import ConfigPages from "./configs_pages";
 import Configs from "./configs";
 import Users from "./users";
 import BlogAdd from "./blog_add";
-import "../../assets/css/admin.css";
+import MyArticles from './my_articles';
 
 const Admin = () => {
   return (
@@ -23,6 +24,7 @@ const Admin = () => {
         <Route path="/users" element={<Users />} />
         <Route path="/configs/pages" element={<ConfigPages />} />
         <Route path="/blogs/new" element={<BlogAdd />} />
+        <Route path="/blogs/all" element={<MyArticles />} />
       </Routes>
     </div>
   );

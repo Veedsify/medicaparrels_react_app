@@ -67,7 +67,7 @@ const Users = () => {
                 <td>joshmosh@gmail.com</td>
                 <td>080803803803</td>
                 <td>
-                  <span className="state banned">Banded</span>
+                  <span className="state banned">Banned</span>
                 </td>
               </tr>
             </tbody>
